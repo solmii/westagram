@@ -18,6 +18,8 @@ function btnColorChange(event) {
   }
 }
 
+//click event
+
 inputId.addEventListener('keyup', btnColorChange);
 inputPw.addEventListener('keyup', btnColorChange);
 
