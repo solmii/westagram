@@ -2,7 +2,7 @@ main {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
 }
 
 /* nav_bar */
@@ -83,7 +83,6 @@ main {
 /* main container */
 .main_container {
   width: 935px;
-  height: 1000px;
   display: flex;
   justify-content: center;
   padding-top: 30px;
@@ -296,7 +295,12 @@ main {
 .add_comment {
   display: flex;
   align-items: center;
+  width: 612px;
+  margin-left: -17px;
   padding: 16px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border: 1px solid #dbdbdb;
   background-color: #fff;
 }
 
@@ -305,6 +309,13 @@ main {
   height: 18px;
   font-size: 1.4rem;
   color: #262626;
+}
+
+.comment_btn {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #0095f6;
+  opacity: 0.3;
 }
 
 /* main-right sidebar */

@@ -6,7 +6,7 @@ let inputPw = document.getElementsByClassName('login_input')[1];
 const facebookLogin = document.getElementsByTagName('a')[0];
 const forgotPw = document.getElementsByTagName('a')[1];
 
-function btnColorChange(event) {
+function btnColorChange() {
   if (inputId.value.length < 1 || inputPw.value.length < 1) {
     loginButton.style.opacity = 0.3;
     loginButton.style.cursor = 'Default';
