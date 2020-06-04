@@ -13,7 +13,6 @@ inputValue.addEventListener('keyup', function () {
 });
 
 // 댓글 입력시 새 댓글창 추가
-
 commentBtn.addEventListener('click', function () {
   let commentUpload = document.createElement('div');
   let userId = document.createElement('a');
@@ -35,4 +34,9 @@ commentBtn.addEventListener('click', function () {
     commentUpload.appendChild(delBtn);
     commentUpload.appendChild(commentValue);
   }
+
+  // 삭제 버튼 클릭시 댓글 삭제
+  delBtn.addEventListener('click', function () {
+    commentUpload.remove();
+  });
 });
