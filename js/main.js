@@ -12,7 +12,9 @@ inputValue.addEventListener('keyup', function () {
   commentBtn.disabled = inputValue.value ? false : true;
 });
 
-// 댓글 입력시 새 댓글창 추가
+// 댓글 입력시 새 댓글창 추가 - function
+
+// 댓글 입력시 새 댓글창 추가 - event
 commentBtn.addEventListener('click', function () {
   let commentUpload = document.createElement('div');
   let userId = document.createElement('a');
@@ -33,6 +35,9 @@ commentBtn.addEventListener('click', function () {
     commentUpload.appendChild(userId);
     commentUpload.appendChild(delBtn);
     commentUpload.appendChild(commentValue);
+
+    // 게시 버튼 누르면 작성했던 댓글 내용 사라지기...인데 야매ㅠ
+    inputValue.value = '';
   }
 
   // 삭제 버튼 클릭시 댓글 삭제
