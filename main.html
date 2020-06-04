@@ -26,7 +26,11 @@
                 <a href="#"><img src="img/icon_home.png" /></a>
               </li>
               <li class="icon_direct">
-                <a href="#"><img src="img/icon_direct.png" /></a>
+                <a href="#"><svg width="22" height="22" viewBox="0 0 48 48">
+                  <path
+                    d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z"
+                  ></path></svg
+              ></a>
               </li>
               <li class="icon_nav">
                 <a href="#"><img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png" /></a>
@@ -36,7 +40,7 @@
               </li>
               <li class="icon_pofile">
                 <a href="#"
-                  ><div class="profile_box"><img src="img/icon_profile.jpg" /></div
+                  ><div class="profile_box"><img src="img/icon_profile.jpg" alt="solmii_dev" /></div
                 ></a>
               </li>
             </ul>
@@ -49,37 +53,186 @@
           <!-- main-left feed_log -->
           <div class="feed_log">
             <div class="feed_log_list">
-              <a href="#"><img src="img/feed_log_img1.jpg" /></a>
+              <a href="#"><img src="img/feed_log_img1.jpg" />
+              <p class="feed_log_name">test1</p></a> 
             </div>
             <div class="feed_log_list">
-              <a href="#"><img src="img/feed_log_img2.jpg" /></a>
+              <a href="#"><img src="img/feed_log_img2.jpg" />
+                <p class="feed_log_name">test2</p></a>
             </div>
           </div>
 
           <!-- main-left main_feed -->
           <div class="feed">
             <div class="feed_title">
-              <img
-                src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/64219646_866712363683753_7365878438877462528_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=Bj3WvVLmBYAAX_EHiGC&oh=d81e5bbacfadeb11cf773cc7c6a3650d&oe=5F004B70"
-                alt=">WECODE"
-              />
-              <a href="#">solmii_dev</a>
-              <a href="#">Wecode</a>
+              <div class="title_img_radius">
+                <img src="img/icon_profile.jpg" alt="solmii_dev" />
+              </div>
+              <div class="feed_title_head">
+                <a class="feed_title_main-head" href="#">solmii_dev</a>
+                <a class="feed_title_sub-head" href="#">WeWork at Seolleung II</a>
+              </div>
+              <button></button>
             </div>
-            <div class="feed_img"></div>
+            <div class="feed_img">
+              <img src="img/feed_main.JPG" alt="wecode" />
+            </div>
 
-            <div class="feed_icons"></div>
+            <div class="feed_icons">
+              <div>
+                <ul>
+                  <li>
+                    <a href="#"><img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="♥" /></a>
+                    <a href="#"><img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/comment.png" alt="👄" /></a>
+                    <a href="#"></a>
+                      <svg width="24" height="24" viewBox="0 0 48 48">
+                        <path
+                          d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z"
+                        ></path></svg
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+              <div><img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/bookmark.png" alt="bookmark"></div>
+            </div>
 
-            <div class="feed_comments"></div>
+            <div class="feed_comments">
+              <div class="feed_liker">
+                <img src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/64219646_866712363683753_7365878438877462528_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=Bj3WvVLmBYAAX_EHiGC&oh=d81e5bbacfadeb11cf773cc7c6a3650d&oe=5F004B70"
+                alt=">WECODE">
+                <span><a class="comment_id" href="#">wecode_bootcamp</a>님 <a class="comment_id" href="#">외 32,356명</a> 이 좋아합니다</span>
+              </div>
+
+              <div class="feed_description">
+                <p><a class="comment_tag" href="#">#Wecode</a>에서 치맥🐔🍺 <a class="comment_tag" href="#">#infinity팀</a> 짱👍</p>
+              </div>
+
+              <div class="more_comment"><a href="#">댓글 4개 모두 보기</a></div>
+
+              <div class="comment_form">
+                  <a class="comment_id" href="#">User1</a>
+                  <a class="comment_tag" href="#">@solmii_dev</a>
+                  <span>치킨이,,,참,,,맛있겠읍니다,,,@>->-</span>
+              </div>
+              <div class="comment_form">
+                <a class="comment_id" href="#">User2</a>
+                <a class="comment_tag" href="#">@wecode_bootcamp</a>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+            </div>
+              <div class="comment_day"><p>1일 전</p></div>
+
+              <!-- comment -->
+              <div class="add_comment">
+                <textarea placeholder="댓글 달기..." autocomplete="off" autocorrect="off"></textarea>
+                <button class="comment_btn">게시</button>
+              </div>
+            </div>
           </div>
         </section>
 
         <section class="sidebar_container">
           <!-- main-right_sidebar -->
-          <div class="main_right"></div>
+          <div class="main_right">
+          <div class="sidebar_profile">
+          <div class="sidebar_img_radius">
+            <img src="img/icon_profile.jpg" alt="solmii_dev" />
+          </div>
+            <div class="feed_title_head">
+              <a class="feed_title_main-head" href="#">solmii_dev</a>
+              <a class="feed_title_sub-head sidebar_name" href="#">solmi_kang</a>
+            </div>
+          </div>
 
+            <div class="recommend">
+              <div class="recommend_msg">회원님을 위한 추천</div>
+              <div class="view_all"><a href="#">모두 보기</a></div>
+            </div>
+
+            <div class="follow">
+            <!-- follower1 -->
+            <div class="follow_profile">
+              <div class="title_img_radius">
+                <img src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/64219646_866712363683753_7365878438877462528_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=Bj3WvVLmBYAAX_EHiGC&oh=d81e5bbacfadeb11cf773cc7c6a3650d&oe=5F004B70"
+                alt=">WECODE" />
+              </div>
+                <div class="follow_form">
+                  <a class="feed_title_main-head" href="#">wecode_bootcamp</a>
+                  <a class="feed_title_sub-head sidebar_name" href="#">회원님을 팔로우합니다</a>
+                </div>
+              <div class="follow_btn"><button>팔로우</button></div>
+              </div>
+
+              <!-- follower1 -->
+            <div class="follow_profile">
+              <div class="title_img_radius">
+                <img src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/64219646_866712363683753_7365878438877462528_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=Bj3WvVLmBYAAX_EHiGC&oh=d81e5bbacfadeb11cf773cc7c6a3650d&oe=5F004B70"
+                alt=">WECODE" />
+              </div>
+                <div class="follow_form">
+                  <a class="feed_title_main-head" href="#">wecode_bootcamp</a>
+                  <a class="feed_title_sub-head sidebar_name" href="#">회원님을 팔로우합니다</a>
+                </div>
+              <div class="follow_btn"><button>팔로우</button></div>
+              </div>
+
+              <!-- follower1 -->
+            <div class="follow_profile">
+              <div class="title_img_radius">
+                <img src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/64219646_866712363683753_7365878438877462528_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=Bj3WvVLmBYAAX_EHiGC&oh=d81e5bbacfadeb11cf773cc7c6a3650d&oe=5F004B70"
+                alt=">WECODE" />
+              </div>
+                <div class="follow_form">
+                  <a class="feed_title_main-head" href="#">wecode_bootcamp</a>
+                  <a class="feed_title_sub-head sidebar_name" href="#">회원님을 팔로우합니다</a>
+                </div>
+              <div class="follow_btn"><button>팔로우</button></div>
+              </div>
+
+              <!-- follower1 -->
+            <div class="follow_profile">
+              <div class="title_img_radius">
+                <img src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/64219646_866712363683753_7365878438877462528_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=Bj3WvVLmBYAAX_EHiGC&oh=d81e5bbacfadeb11cf773cc7c6a3650d&oe=5F004B70"
+                alt=">WECODE" />
+              </div>
+                <div class="follow_form">
+                  <a class="feed_title_main-head" href="#">wecode_bootcamp</a>
+                  <a class="feed_title_sub-head sidebar_name" href="#">wecode님 외 6명이 팔로우합니다</a>
+                </div>
+              <div class="follow_btn"><button>팔로우</button></div>
+              </div>
+
+              <!-- follower1 -->
+            <div class="follow_profile">
+              <div class="title_img_radius">
+                <img src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/64219646_866712363683753_7365878438877462528_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=Bj3WvVLmBYAAX_EHiGC&oh=d81e5bbacfadeb11cf773cc7c6a3650d&oe=5F004B70"
+                alt=">WECODE" />
+              </div>
+                <div class="follow_form">
+                  <a class="feed_title_main-head" href="#">wecode_bootcamp</a>
+                  <a class="feed_title_sub-head sidebar_name" href="#">회원님을 팔로우합니다</a>
+                </div>
+              <div class="follow_btn"><button>팔로우</button></div>
+              </div>
+            </div>
           <!-- footer -->
-          <div class="footer"></div>
+          <div class="footer_info">
+            <ul>
+              <li>
+                <a href="#">소개﹒</a>
+                <a href="#">도움말﹒</a>
+                <a href="#">홍보 센터﹒</a>
+                <a href="#">API﹒</a>
+                <a href="#">채용 정보﹒</a>
+                <a href="#">개인정보처리방침﹒</a>
+                <a href="#">약관﹒</a>
+                <a href="#">위치﹒</a>
+                <a href="#">인기 계정﹒</a>
+                <a href="#">해시태그﹒</a>
+                <a href="#">언어</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer">© 2020 INSTAGRAM FROM SOLMI</div>
         </section>
       </section>
     </main>

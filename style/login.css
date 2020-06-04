@@ -80,7 +80,6 @@
 }
 
 .facebook_login a {
-  text-decoration: none;
   font-size: 1.4em;
   font-weight: bold;
   color: #385185;
@@ -97,7 +96,6 @@
 }
 
 .forgot_pw a {
-  text-decoration: none;
   font-size: 1.2em;
   color: #00376b;
 }

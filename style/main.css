@@ -2,6 +2,7 @@ main {
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 100px;
 }
 
 /* nav_bar */
@@ -36,7 +37,8 @@ main {
 .search_form input {
   width: 215px;
   height: 28px;
-  font-size: 1.3em;
+  font-size: 1.3rem;
+  font-weight: 300;
   text-align: center;
   color: #8e8e8e;
   padding: 3px 10px 3px 26px;
@@ -92,7 +94,7 @@ main {
   width: 612px;
   display: flex;
   flex-direction: column;
-  margin-right: 24px;
+  margin-right: 34px;
 }
 
 .feed_log {
@@ -100,23 +102,38 @@ main {
   height: 116px;
   display: flex;
   align-items: center;
-  padding: 16px 0;
+  padding: 16px 0 36px 0;
   border: 1px solid #dbdbdb;
   border-radius: 3px;
   background-color: #fff;
 }
 
 .feed_log_list {
-  width: 66px;
-  height: 66px;
-  border: 2px solid #ec407a;
+  width: 62px;
+  height: 62px;
+  position: relative;
   border-radius: 70%;
-  overflow: hidden;
+  margin-left: 15px;
+  background-image: linear-gradient(to right top, #fcac0f, #fd9522, #fa7f30, #f36a3c, #e85647, #e44751, #dd395b, #d42d65, #d12174, #ca1b85, #be1e96, #ae27a8);
+}
+
+.feed_log_name {
+  font-size: 1.2rem;
+  color: #8e8e8e;
+  position: absolute;
+  top: 55px;
+  left: 18px;
 }
 
 .feed_log_list img {
-  height: 100%;
-  object-fit: cover;
+  width: 56px;
+  height: 56px;
+  position: absolute;
+  left: -12px;
+  top: 3px;
+  border-radius: 70%;
+  border: 3px solid #fff;
+  margin-left: 15px;
 }
 
 /* main-left main_feed */
@@ -128,26 +145,311 @@ main {
   background-color: #fff;
 }
 
+/* feed title radius */
+.feed_title {
+  height: 60px;
+  padding: 16px;
+  display: flex;
+  position: relative;
+}
+
+.feed_title_head {
+  display: flex;
+  flex-direction: column;
+  margin-left: 16px;
+}
+
+.feed_title_main-head {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.feed_title_sub-head {
+  font-size: 1.2rem;
+}
+
+.feed_title button {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 3px;
+  top: 10px;
+  background-image: url(https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/more.png);
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+/* feed - feed_title radius */
+.title_img_radius {
+  width: 32px;
+  height: 32px;
+  border-radius: 70%;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.title_img_radius img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* feed - feed_img */
+.feed_img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.feed_img img {
+  height: 600px;
+}
+
+/* feed - feed_icons */
+.feed_icons {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.feed_icons ul {
+  padding: 0;
+}
+
+.feed_icons li {
+  list-style: none;
+}
+
+.feed_icons img {
+  width: 24px;
+  margin-right: 8px;
+}
+
+/* feed - feed_comments */
+.feed_comments {
+  height: 145px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 16px;
+}
+
+.feed_comments p {
+  font-size: 1.4rem;
+}
+
+.feed_comments span {
+  font-size: 1.4rem;
+  font-weight: 350;
+}
+
+.feed_liker {
+  display: flex;
+  align-content: center;
+}
+
+.feed_liker img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  border-radius: 70%;
+}
+
+/* feed_comments - description */
+.feed_description {
+  padding-left: 16px;
+}
+
+.feed_description p {
+  margin: 5px 0;
+}
+
+.comment_id {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.comment_tag,
+.more_comment a {
+  font-size: 1.4rem;
+  color: #00376b;
+}
+
+/* feed_comment - comment_form */
+.more_comment {
+  margin-bottom: 4px;
+  padding-left: 16px;
+}
+
+.comment_form {
+  padding-left: 16px;
+}
+
+.comment_day p {
+  font-size: 1rem;
+  color: #8e8e8e;
+}
+
+/* feed - add comment */
+.add_comment {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  background-color: #fff;
+}
+
+.add_comment textarea {
+  width: 95%;
+  height: 18px;
+  font-size: 1.4rem;
+  color: #262626;
+}
+
 /* main-right sidebar */
+.main_right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+}
+
+.sidebar_profile {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar_img_radius {
+  width: 56px;
+  height: 56px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 70%;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.sidebar_img_radius img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .sidebar_container {
   width: 293px;
 }
 
-.main_right {
-  width: 100%;
-  height: 500px;
-  background-color: #8e8e8e;
+.sidebar_pofile {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar_pofile a {
+  display: block;
+}
+
+.sidebar_pofile img {
+  width: 56px;
+  height: 56px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 70%;
+  overflow: hidden;
+}
+
+.sidebar_name {
+  color: #8e8e8e;
+  padding-top: 2px;
+}
+
+.sidebar_pofile .feed_log_name {
+  position: unset;
+}
+
+/* sidebar_recommend */
+.recommend {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.recommend_msg {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #8e8e8e;
+}
+
+.view_all a {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #262626;
+}
+
+/* sidebar_follow_ */
+.follow {
+  padding-top: 15px;
+}
+
+.follow_profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  padding: 7px 0;
+}
+
+.follow_form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.follow_btn {
+  position: absolute;
+  right: 0px;
+  top: 17px;
+}
+
+.follow_btn button {
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: #0095f6;
 }
 
 /* main-right footer */
-.footer {
+.footer_info {
   width: 100%;
-  height: 100px;
-  background-color: darkolivegreen;
+  margin-top: 15px;
 }
 
+.footer_info ul {
+  padding: 0;
+}
+
+.footer_info li {
+  list-style: none;
+}
+
+.footer_info a {
+  width: 100%;
+  font-size: 1.1rem;
+  letter-spacing: -0.5px;
+  color: #c7c7c7;
+}
+
+.footer {
+  font-size: 1.2rem;
+  color: #c7c7c7;
+  margin-top: 10px;
+}
+
+/* media query */
 @media only screen and (max-width: 930px) {
   .sidebar_container {
     display: none;
+  }
+  .feeds_container {
+    margin: 0;
   }
 }
