@@ -1,26 +1,19 @@
 'use strict';
 
-const submitBtn = document.getElementsByClassName('comment_btn')[0];
+let commentBtn = document.getElementsByClassName('comment_btn')[0];
 let userComment = document.getElementsByTagName('textarea')[0];
-const commentForm = document.getElementsByClassName('comment_form')[0];
+let commentForm = document.getElementsByClassName('comment_form')[0];
 
-function submitBtnChange() {
-  if (userComment.value.length < 1) {
-    submitBtn.style.opacity = 0.3;
-    submitBtn.style.cursor = 'Default';
-    submitBtn.disabled = true;
-  } else {
-    submitBtn.style.opacity = 1;
-    submitBtn.style.cursor = 'pointer';
-    submitBtn.disabled = false;
-  }
-}
-
-userComment.addEventListener('keyup', submitBtnChange);
+// 댓글 입력시 게시 버튼 색 변화
+userComment.addEventListener('keyup', function () {
+  commentBtn.style.opacity = userComment.value ? 1 : 0.3;
+  commentBtn.style.cursor = userComment.value ? 'pointer' : 'Default';
+  commentBtn.disabled = userComment.value ? true : false;
+});
 
 // function uploadComment() {
 //   if (userComment.value.length > 1) {
 //   }
 // }
 
-// submitBtn.addEventListener('click', uploadComment);
+// submicommentBtntBtn.addEventListener('click', uploadComment);

@@ -8,17 +8,16 @@ main {
 /* nav_bar */
 .nav_container {
   width: 100%;
-  height: 54px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 4px 0;
   border-bottom: 1px solid #dbdbdb;
   background-color: #fff;
 }
 
 .nav_bar {
   width: 935px;
-  height: 54px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -74,6 +73,7 @@ main {
   border-radius: 70%;
   overflow: hidden;
 }
+
 .icon_profile img {
   width: 100%;
   height: 100%;
@@ -229,7 +229,6 @@ main {
 
 /* feed - feed_comments */
 .feed_comments {
-  height: 145px;
   display: flex;
   flex-direction: column;
   padding-left: 16px;
@@ -244,12 +243,12 @@ main {
   font-weight: 350;
 }
 
-.feed_liker {
+.feed_like {
   display: flex;
   align-content: center;
 }
 
-.feed_liker img {
+.feed_like img {
   width: 20px;
   height: 20px;
   margin-right: 5px;
@@ -295,13 +294,8 @@ main {
 .add_comment {
   display: flex;
   align-items: center;
-  width: 612px;
-  margin-left: -17px;
   padding: 16px;
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
-  border: 1px solid #dbdbdb;
-  background-color: #fff;
+  border-top: 1px solid #dbdbdb;
 }
 
 .add_comment textarea {
@@ -457,9 +451,21 @@ main {
 
 /* media query */
 @media only screen and (max-width: 930px) {
+  .nav_bar {
+    max-width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav_bar ul {
+    padding: 0;
+  }
+
   .sidebar_container {
     display: none;
   }
+
   .feeds_container {
     margin: 0;
   }

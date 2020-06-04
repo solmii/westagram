@@ -18,3 +18,8 @@ button,
 textarea {
   all: unset;
 }
+
+input,
+textarea:focus {
+  outline: none;
+}
